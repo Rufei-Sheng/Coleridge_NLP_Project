@@ -136,7 +136,7 @@ After hyperparamter tuning the following architecture was selected:
 The senteces that had probability greater than P_threshold were selected and passed further into the pipeline. The threshold value of 0.8 was used after tuning.
 
 ### NGram Similarity Candidate Mentions and Dataset Titles
-[Whole pipeline Notebook has relevant Code](Pipeline_Production.ipynb)
+[Whole pipeline Notebook has relevant Code](ColeridgePipeline.ipynb)
 
 We solved that problem by cascading two modules of coarse search and fine search. 
 
@@ -157,7 +157,7 @@ For selected candidate sentences we did following steps:
 
 ## Research Fields Identification
 [Feilds Extraction Wikipedia](WikipediaFiledExtraction.ipynb)  
-[Pipeline](Pipeline_Production.ipynb)
+[Pipeline](ColeridgePipeline.ipynb)
 
 Due to time constraints we were not able to fully explore the fields and methods identification problems. We decided to use document similarity matching between the publications and research fields. For that we tried to prepare text related to each field by extracting wikipedia articles related to that field. Some of the fields did not have an article that exactly matched the content. The field identification module have following steps:
 - Clean the text data
